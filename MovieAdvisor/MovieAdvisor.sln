@@ -3,7 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.BulkDataLoader", "MovieAdvisor.BulkDataLoader\MovieAdvisor.BulkDataLoader.csproj", "{43E633F8-32CC-4194-B478-EF42366FB198}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{43D0755F-334B-4910-8553-CCC5B647D4BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{4B084C5B-127F-4395-90FD-4D2746268870}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MovieAdvisor.Architecture", "MovieAdvisor.Architecture\MovieAdvisor.Architecture.modelproj", "{6C472F3F-59B5-4970-9DA3-BDE9EA385E8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BA5B9BEC-2AD4-4545-B75F-9949F781666A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{08B792FC-EFC2-45EC-993D-6445CE5552AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BulkDataLoader", "BulkDataLoader", "{9894154E-D942-4015-89E3-B80D6E835C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{BE925280-BB73-406B-A2D6-6DA8E469E051}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Qualifier", "Qualifier", "{254BA38E-4014-4146-8C36-6D7532626202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.Business.Interfaces", "Core\Interfaces\MovieAdvisor.Core.Business.Interfaces\MovieAdvisor.Core.Business.Interfaces.csproj", "{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.DataAccess.Entities", "Core\Entities\MovieAdvisor.Core.DataAccess.Entities\MovieAdvisor.Core.DataAccess.Entities.csproj", "{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.Business.Entities", "Core\Entities\MovieAdvisor.Core.Business.Entities\MovieAdvisor.Core.Business.Entities.csproj", "{D620A0DF-A793-4F04-A2F5-5946AD19A808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.BulkDataLoader", "BulkDataLoader\MovieAdvisor.BulkDataLoader\MovieAdvisor.BulkDataLoader.csproj", "{43E633F8-32CC-4194-B478-EF42366FB198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +33,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C472F3F-59B5-4970-9DA3-BDE9EA385E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C472F3F-59B5-4970-9DA3-BDE9EA385E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C472F3F-59B5-4970-9DA3-BDE9EA385E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C472F3F-59B5-4970-9DA3-BDE9EA385E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D620A0DF-A793-4F04-A2F5-5946AD19A808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D620A0DF-A793-4F04-A2F5-5946AD19A808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D620A0DF-A793-4F04-A2F5-5946AD19A808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D620A0DF-A793-4F04-A2F5-5946AD19A808}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -18,5 +56,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B084C5B-127F-4395-90FD-4D2746268870} = {BA5B9BEC-2AD4-4545-B75F-9949F781666A}
+		{43D0755F-334B-4910-8553-CCC5B647D4BF} = {BA5B9BEC-2AD4-4545-B75F-9949F781666A}
+		{BE925280-BB73-406B-A2D6-6DA8E469E051} = {BA5B9BEC-2AD4-4545-B75F-9949F781666A}
+		{D0FA1F8C-7842-46D2-9F9F-03B00C75C9FD} = {4B084C5B-127F-4395-90FD-4D2746268870}
+		{D620A0DF-A793-4F04-A2F5-5946AD19A808} = {4B084C5B-127F-4395-90FD-4D2746268870}
+		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13} = {43D0755F-334B-4910-8553-CCC5B647D4BF}
+		{43E633F8-32CC-4194-B478-EF42366FB198} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 	EndGlobalSection
 EndGlobal
