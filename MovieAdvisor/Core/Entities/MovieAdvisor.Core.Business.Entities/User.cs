@@ -4,7 +4,7 @@
     {
         public int UserId { get; set; }
 
-        public GenderEnum Genre { get; set; }
+        public GenderEnum Gender { get; set; }
 
         public AgeRangeEnum AgeRange { get; set; }
 

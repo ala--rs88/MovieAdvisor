@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MovieAdvisor.BulkDataLoader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MoviesDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\movies.dat</Value>
+    </Setting>
+    <Setting Name="UsersDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\users.dat</Value>
+    </Setting>
+    <Setting Name="RatingsDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\ratings.dat</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

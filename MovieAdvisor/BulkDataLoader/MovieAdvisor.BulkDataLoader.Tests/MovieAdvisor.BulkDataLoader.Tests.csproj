@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43E633F8-32CC-4194-B478-EF42366FB198}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MovieAdvisor.BulkDataLoader</RootNamespace>
-    <AssemblyName>MovieAdvisor.BulkDataLoader</AssemblyName>
+    <RootNamespace>MovieAdvisor.BulkDataLoader.Tests</RootNamespace>
+    <AssemblyName>MovieAdvisor.BulkDataLoader.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,29 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Server\EntityParsers\MovieParser.cs" />
-    <Compile Include="Core\Server\EntityParsers\RatingRecordParser.cs" />
-    <Compile Include="Core\Server\EntityParsers\UserParser.cs" />
-    <Compile Include="Core\Server\Loader.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="EntityParsers\MovieParserTests.cs" />
+    <Compile Include="EntityParsers\RatingRecordParserTests.cs" />
+    <Compile Include="EntityParsers\UserParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Entities\MovieAdvisor.Core.DataAccess.Entities\MovieAdvisor.Core.DataAccess.Entities.csproj">
       <Project>{d0fa1f8c-7842-46d2-9f9f-03b00c75c9fd}</Project>
       <Name>MovieAdvisor.Core.DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieAdvisor.BulkDataLoader\MovieAdvisor.BulkDataLoader.csproj">
+      <Project>{43e633f8-32cc-4194-b478-ef42366fb198}</Project>
+      <Name>MovieAdvisor.BulkDataLoader</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

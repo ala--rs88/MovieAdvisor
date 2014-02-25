@@ -1,6 +1,6 @@
 ﻿namespace MovieAdvisor.Core.DataAccess.Entities
 {
-    class RatingRecordData
+    public class RatingRecordData
     {
         public int UserId { get; set; }
 

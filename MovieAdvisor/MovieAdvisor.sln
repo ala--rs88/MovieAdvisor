@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.Business.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.BulkDataLoader", "BulkDataLoader\MovieAdvisor.BulkDataLoader\MovieAdvisor.BulkDataLoader.csproj", "{43E633F8-32CC-4194-B478-EF42366FB198}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.BulkDataLoader.Tests", "BulkDataLoader\MovieAdvisor.BulkDataLoader.Tests\MovieAdvisor.BulkDataLoader.Tests.csproj", "{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E633F8-32CC-4194-B478-EF42366FB198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 		{D620A0DF-A793-4F04-A2F5-5946AD19A808} = {4B084C5B-127F-4395-90FD-4D2746268870}
 		{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13} = {43D0755F-334B-4910-8553-CCC5B647D4BF}
 		{43E633F8-32CC-4194-B478-EF42366FB198} = {9894154E-D942-4015-89E3-B80D6E835C8F}
+		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 	EndGlobalSection
 EndGlobal

@@ -11,36 +11,37 @@
 
         Adventure = 2,
 
-        Animation = 3,
+        Animation = 4,
 
-        Children = 4,
+        Children = 8,
 
-        Comedy = 5,
+        Comedy = 16,
 
-        Crime = 6,
+        Crime = 32,
 
-        Documentary = 7,
+        Documentary = 64,
 
-        Drama = 8,
+        Drama = 128,
 
-        Fantasy = 9,
+        Fantasy = 256,
 
-        FilmNoir = 10,
+        FilmNoir = 512,
 
-        Horror = 11,
+        Horror = 1024,
 
-        Musical = 12,
+        Musical = 2048,
 
-        Mystery = 13,
+        Mystery = 4096,
 
-        Romance = 14,
+        Romance = 8192,
 
-        SciFi = 15,
+        SciFi = 16384,
 
-        Thriller = 16,
+        Thriller = 32768,
 
-        War = 17,
+        War = 65536,
 
-        Western = 18
+        Western = 131072,
+        Fa
     }
 }
