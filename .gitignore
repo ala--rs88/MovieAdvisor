@@ -1,0 +1,15 @@
+MovieAdvisor/BulkDataLoader/MovieAdvisor.BulkDataLoader.Tests/bin/
+MovieAdvisor/BulkDataLoader/MovieAdvisor.BulkDataLoader.Tests/obj/
+MovieAdvisor/BulkDataLoader/MovieAdvisor.BulkDataLoader/bin/
+MovieAdvisor/BulkDataLoader/MovieAdvisor.BulkDataLoader/obj/
+MovieAdvisor/Core/Entities/MovieAdvisor.Core.Business.Entities/bin/
+MovieAdvisor/Core/Entities/MovieAdvisor.Core.Business.Entities/obj/
+MovieAdvisor/Core/Entities/MovieAdvisor.Core.DataAccess.Entities/bin/
+MovieAdvisor/Core/Entities/MovieAdvisor.Core.DataAccess.Entities/obj/
+MovieAdvisor/Core/Interfaces/MovieAdvisor.Core.Business.Interfaces/obj/
+MovieAdvisor/Core/Interfaces/MovieAdvisor.Core.Business.Interfaces/bin/
+RawDataSets/MovieLens/ml-100k/
+RawDataSets/MovieLens/ml-10m/
+RawDataSets/MovieLens/ml-1m/
+MovieAdvisor/MovieAdvisor.sln.DotSettings.user
+*.suo
