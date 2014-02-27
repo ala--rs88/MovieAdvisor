@@ -2,7 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Globalization;
     using System.Linq;
+    using Exceptions;
     using MovieAdvisor.Core.DataAccess.Entities;
 
     public class MovieParser
@@ -29,26 +31,34 @@
             { "Western", MovieGenreFlagsEnumData.Western }
         };
 
-        // todo: refactor
+        /// <exception cref="EntityParserException">Any inner exception is wrapped into <c>EntityParserException</c> instance before throwing.</exception>
         public MovieData ParseFromString(string stringRepresentation)
         {
-            var values = stringRepresentation.Split(new[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
-            var id = int.Parse(values[0]);
-
-            var openBraceIndex = values[1].LastIndexOf('(');
-
-            var title = values[1].Substring(0, openBraceIndex - 1);
-            var year = int.Parse(values[1].Substring(openBraceIndex + 1, 4));
-
-            var genres = values[2].Split('|').Select(x => genresRepresentationMap[x]).Aggregate((a, b) => a | b);
-
-            return new MovieData
+            // todo: refactor
+            try
             {
-                MovieId = id,
-                Title = title,
-                Year = year,
-                Genres = genres
-            };
+                var values = stringRepresentation.Split(new[] {"::"}, StringSplitOptions.RemoveEmptyEntries);
+                var id = int.Parse(values[0]);
+
+                var openBraceIndex = values[1].LastIndexOf('(');
+
+                var title = values[1].Substring(0, openBraceIndex - 1);
+                var year = int.Parse(values[1].Substring(openBraceIndex + 1, 4));
+
+                var genres = values[2].Split('|').Select(x => genresRepresentationMap[x]).Aggregate((a, b) => a | b);
+
+                return new MovieData
+                {
+                    MovieId = id,
+                    Title = title,
+                    Year = year,
+                    Genres = genres
+                };
+            }
+            catch (Exception ex)
+            {
+                throw new EntityParserException(string.Format(CultureInfo.InvariantCulture, "Failed to parse {0} from string: {1}", typeof(MovieData).Name, stringRepresentation), ex);
+            }
         }
     }
 }

@@ -25,7 +25,7 @@ namespace MovieAdvisor.BulkDataLoader.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("...\\...\\...\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\movies.dat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\..\\..\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\movies.dat")]
         public string MoviesDataPath {
             get {
                 return ((string)(this["MoviesDataPath"]));
@@ -34,7 +34,7 @@ namespace MovieAdvisor.BulkDataLoader.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("...\\...\\...\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\users.dat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\..\\..\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\users.dat")]
         public string UsersDataPath {
             get {
                 return ((string)(this["UsersDataPath"]));
@@ -43,7 +43,7 @@ namespace MovieAdvisor.BulkDataLoader.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("...\\...\\...\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\ratings.dat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\..\\..\\RawDataSets\\MovieLens\\ml-1m\\ml-1m\\ratings.dat")]
         public string RatingsDataPath {
             get {
                 return ((string)(this["RatingsDataPath"]));

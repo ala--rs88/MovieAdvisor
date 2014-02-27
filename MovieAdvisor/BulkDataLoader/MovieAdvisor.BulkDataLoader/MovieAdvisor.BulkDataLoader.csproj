@@ -35,13 +35,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Exceptions\EntityParserException.cs" />
     <Compile Include="Core\Server\EntityParsers\MovieParser.cs" />
     <Compile Include="Core\Server\EntityParsers\RatingRecordParser.cs" />
     <Compile Include="Core\Server\EntityParsers\UserParser.cs" />
@@ -65,6 +62,14 @@
     <ProjectReference Include="..\..\Core\Entities\MovieAdvisor.Core.DataAccess.Entities\MovieAdvisor.Core.DataAccess.Entities.csproj">
       <Project>{d0fa1f8c-7842-46d2-9f9f-03b00c75c9fd}</Project>
       <Name>MovieAdvisor.Core.DataAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Interfaces\MovieAdvisor.Core.DataAccess.Interfaces\MovieAdvisor.Core.DataAccess.Interfaces.csproj">
+      <Project>{5e351166-5ed5-41e6-9292-ab61030cf086}</Project>
+      <Name>MovieAdvisor.Core.DataAccess.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Server\MovieAdvisor.Core.DataAccess\MovieAdvisor.Core.DataAccess.csproj">
+      <Project>{56588572-549b-456b-903b-97b5e9f050c3}</Project>
+      <Name>MovieAdvisor.Core.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,9 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-
-namespace MovieAdvisor.BulkDataLoader.Core.Server.EntityParsers
+﻿namespace MovieAdvisor.BulkDataLoader.Core.Server.EntityParsers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using Exceptions;
     using MovieAdvisor.Core.DataAccess.Entities;
 
     public class UserParser
@@ -25,31 +25,39 @@ namespace MovieAdvisor.BulkDataLoader.Core.Server.EntityParsers
             { "56", AgeRangeEnumData.OlderThan55 }
         };
 
+        /// <exception cref="EntityParserException">Any inner exception is wrapped into <c>EntityParserException</c> instance before throwing.</exception>
         public UserData ParseFromString(string stringRepresentation)
         {
-            var values = stringRepresentation.Split(new[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
-
-            var userId = int.Parse(values[0]);
-            var gender = genderRepresentationMap[values[1]];
-            var ageRange = ageRangeRepresentationMap[values[2]];
-
-            var occupation = (UserOccupationEnumData)int.Parse(values[3]);
-
-            if (!Enum.IsDefined(typeof(UserOccupationEnumData), occupation))
+            try
             {
-                throw new FormatException();
+                var values = stringRepresentation.Split(new[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
+
+                var userId = int.Parse(values[0]);
+                var gender = genderRepresentationMap[values[1]];
+                var ageRange = ageRangeRepresentationMap[values[2]];
+
+                var occupation = (UserOccupationEnumData)int.Parse(values[3]);
+
+                if (!Enum.IsDefined(typeof(UserOccupationEnumData), occupation))
+                {
+                    throw new FormatException();
+                }
+
+                var zipCode = values[4];
+
+                return new UserData
+                {
+                    UserId = userId,
+                    Gender = gender,
+                    AgeRange = ageRange,
+                    Occupation = occupation,
+                    ZipCode = zipCode
+                };
             }
-
-            var zipCode = values[4];
-
-            return new UserData
+            catch (Exception ex)
             {
-                UserId = userId,
-                Gender = gender,
-                AgeRange = ageRange,
-                Occupation = occupation,
-                ZipCode = zipCode
-            };
+                throw new EntityParserException(string.Format(CultureInfo.InvariantCulture, "Failed to parse {0} from string: {1}", typeof(UserData).Name, stringRepresentation), ex);
+            }
         }
     }
 }

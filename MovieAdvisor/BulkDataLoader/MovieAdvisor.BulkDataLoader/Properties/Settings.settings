@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="MoviesDataPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\movies.dat</Value>
+      <Value Profile="(Default)">..\..\..\..\..\RawDataSets\MovieLens\ml-1m\ml-1m\movies.dat</Value>
     </Setting>
     <Setting Name="UsersDataPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\users.dat</Value>
+      <Value Profile="(Default)">..\..\..\..\..\RawDataSets\MovieLens\ml-1m\ml-1m\users.dat</Value>
     </Setting>
     <Setting Name="RatingsDataPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">...\...\...\RawDataSets\MovieLens\ml-1m\ml-1m\ratings.dat</Value>
+      <Value Profile="(Default)">..\..\..\..\..\RawDataSets\MovieLens\ml-1m\ml-1m\ratings.dat</Value>
     </Setting>
   </Settings>
 </SettingsFile>

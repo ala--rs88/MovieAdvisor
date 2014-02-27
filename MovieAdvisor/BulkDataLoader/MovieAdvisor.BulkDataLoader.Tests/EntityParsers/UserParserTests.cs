@@ -17,7 +17,7 @@
 
         [Test]
         [TestCase("14::M::35::0::60126", 14, GenderEnumData.Male, AgeRangeEnumData.From35To44, UserOccupationEnumData.Unknown, "60126")]
-        [TestCase("17::F::18::12::60126", 17, GenderEnumData.Female, AgeRangeEnumData.From18To24, UserOccupationEnumData.Programmer, "60126")]
+        [TestCase("17::F::18::12::60-126", 17, GenderEnumData.Female, AgeRangeEnumData.From18To24, UserOccupationEnumData.Programmer, "60-126")]
         public void ParseFromStringTest(
             string inputString,
             int userId,
