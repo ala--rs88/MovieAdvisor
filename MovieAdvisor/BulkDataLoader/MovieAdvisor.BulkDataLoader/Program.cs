@@ -1,9 +1,10 @@
 ﻿namespace MovieAdvisor.BulkDataLoader
 {
     using System;
+    using Microsoft.Practices.Unity;
     using Core.Server;
     using Properties;
-    using MovieAdvisor.Core.DataAccess;
+    using MovieAdvisor.Core.DataAccess.UnityConfiguration;
 
     public class Program
     {
@@ -11,20 +12,30 @@
         {
             // todo: implement some StatusBar-like feature.
 
-            // todo: consider using Unity Container here, consider getting rid of reference to DataAccess managers.
-            var loader = new Loader(new UserDataManager(), new MovieDataManager(), new RatingRecordDataManager());
+            // todo: wrap container into DependencyResolver to hide excess interface.
+            var unityContainer = new UnityContainer();
+            new DataAccessBaseUnityRegistry().ApplyToUnityContainer(unityContainer);
+
+            var loader = unityContainer.Resolve<Loader>();
 
             Console.WriteLine("Loader instance created.");
+            Console.WriteLine();
 
-            loader.LoadMovies(Settings.Default.MoviesDataPath);
+            Console.WriteLine("[{0}] Loader: movies loading started.", DateTime.Now);
+           // loader.LoadMovies(Settings.Default.MoviesDataPath);
             // todo: add time measuring and counters: RawItemsCount, ParsedCount, LoadedCount
-            Console.WriteLine("Loader: movies loaded.");
+            Console.WriteLine("[{0}] Loader: movies loading finished.", DateTime.Now);
+            Console.WriteLine();
 
-            loader.LoadUsers(Settings.Default.UsersDataPath);
-            Console.WriteLine("Loader: users loaded.");
+            Console.WriteLine("[{0}] Loader: users loading started.", DateTime.Now);
+           // loader.LoadUsers(Settings.Default.UsersDataPath);
+            Console.WriteLine("[{0}] Loader: users loading finished.", DateTime.Now);
+            Console.WriteLine();
 
-            loader.LoadRatings(Settings.Default.RatingsDataPath);
-            Console.WriteLine("Loader: ratings loaded.");
+            Console.WriteLine("[{0}] Loader: ratings loading started.", DateTime.Now);
+           // loader.LoadRatings(Settings.Default.RatingsDataPath);
+            Console.WriteLine("[{0}] Loader: ratings loading finished.", DateTime.Now);
+            Console.WriteLine();
         }
     }
 }

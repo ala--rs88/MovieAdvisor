@@ -22,9 +22,10 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,6 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -67,9 +76,13 @@
       <Project>{5e351166-5ed5-41e6-9292-ab61030cf086}</Project>
       <Name>MovieAdvisor.Core.DataAccess.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Server\MovieAdvisor.Core.DataAccess\MovieAdvisor.Core.DataAccess.csproj">
-      <Project>{56588572-549b-456b-903b-97b5e9f050c3}</Project>
-      <Name>MovieAdvisor.Core.DataAccess</Name>
+    <ProjectReference Include="..\..\Shared\MovieAdvisor.Shared\MovieAdvisor.Shared.csproj">
+      <Project>{3f9e1675-ab70-4306-bdc8-16cc52668631}</Project>
+      <Name>MovieAdvisor.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UnityConfiguration\MovieAdvisor.Core.DataAccess.UnityConfiguration\MovieAdvisor.Core.DataAccess.UnityConfiguration.csproj">
+      <Project>{f643e36a-0e66-454d-b49c-078c0d5c9b18}</Project>
+      <Name>MovieAdvisor.Core.DataAccess.UnityConfiguration</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,12 +2,21 @@
 {
     using Entities;
     using Interfaces;
+    using Neo4jClient;
 
-    public class UserDataManager : IUserDataManager
+    public class UserDataManager : BaseDataManager, IUserDataManager
     {
+        public UserDataManager(IGraphClient neo4jClient)
+            : base(neo4jClient)
+        {
+        }
+
         public void CreateUser(UserData userData)
         {
-            throw new System.NotImplementedException();
+            Neo4j.Cypher
+                .Create("(:User {newUser})")
+                .WithParam("newUser", userData)
+                .ExecuteWithoutResults();
         }
     }
 }

@@ -33,6 +33,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.DataAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.DataAccess", "Core\Server\MovieAdvisor.Core.DataAccess\MovieAdvisor.Core.DataAccess.csproj", "{56588572-549B-456B-903B-97B5E9F050C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnityConfiguration", "UnityConfiguration", "{DBED0594-6589-4194-89F6-4080DCD4F18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.DataAccess.UnityConfiguration", "UnityConfiguration\MovieAdvisor.Core.DataAccess.UnityConfiguration\MovieAdvisor.Core.DataAccess.UnityConfiguration.csproj", "{F643E36A-0E66-454D-B49C-078C0D5C9B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D9041AF4-E71F-48D6-88CC-B68652DAB998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Shared", "Shared\MovieAdvisor.Shared\MovieAdvisor.Shared.csproj", "{3F9E1675-AB70-4306-BDC8-16CC52668631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +79,14 @@ Global
 		{56588572-549B-456B-903B-97B5E9F050C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56588572-549B-456B-903B-97B5E9F050C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56588572-549B-456B-903B-97B5E9F050C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F643E36A-0E66-454D-B49C-078C0D5C9B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F643E36A-0E66-454D-B49C-078C0D5C9B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F643E36A-0E66-454D-B49C-078C0D5C9B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F643E36A-0E66-454D-B49C-078C0D5C9B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9E1675-AB70-4306-BDC8-16CC52668631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9E1675-AB70-4306-BDC8-16CC52668631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9E1675-AB70-4306-BDC8-16CC52668631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9E1675-AB70-4306-BDC8-16CC52668631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +102,7 @@ Global
 		{43E633F8-32CC-4194-B478-EF42366FB198} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 		{5EFF7F53-3D3D-46AA-9067-3BD47DA7D73B} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 		{56588572-549B-456B-903B-97B5E9F050C3} = {BE925280-BB73-406B-A2D6-6DA8E469E051}
+		{F643E36A-0E66-454D-B49C-078C0D5C9B18} = {DBED0594-6589-4194-89F6-4080DCD4F18E}
+		{3F9E1675-AB70-4306-BDC8-16CC52668631} = {D9041AF4-E71F-48D6-88CC-B68652DAB998}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@
 
     public interface IRatingRecordDataManager
     {
-        void CreateRatingRecord(RatingRecordData reatingRecordData);
+        void CreateRatingRecord(RatingRecordData ratingRecordData);
 
         //// toto: add overload for *Draft 
     }
