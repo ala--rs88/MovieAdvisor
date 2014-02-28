@@ -49,5 +49,32 @@ namespace MovieAdvisor.BulkDataLoader.Properties {
                 return ((string)(this["RatingsDataPath"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AreMoviesLoaded {
+            get {
+                return ((bool)(this["AreMoviesLoaded"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AreUsersLoaded {
+            get {
+                return ((bool)(this["AreUsersLoaded"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AreRatingRecordsLoaded {
+            get {
+                return ((bool)(this["AreRatingRecordsLoaded"]));
+            }
+        }
     }
 }

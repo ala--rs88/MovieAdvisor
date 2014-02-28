@@ -1,4 +1,4 @@
-﻿namespace MovieAdvisor.BulkDataLoader.Core.Exceptions
+﻿namespace MovieAdvisor.BulkDataLoader.Core.Entities.Exceptions
 {
     using System;
     using System.Runtime.Serialization;
@@ -30,8 +30,6 @@
         protected EntityParserException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
-        } 
+        }
     }
-
-
 }

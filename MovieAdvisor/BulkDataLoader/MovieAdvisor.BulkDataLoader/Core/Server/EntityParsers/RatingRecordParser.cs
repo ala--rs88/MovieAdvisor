@@ -1,11 +1,13 @@
-﻿namespace MovieAdvisor.BulkDataLoader.Core.Server.EntityParsers
+﻿using MovieAdvisor.BulkDataLoader.Core.Entities.Exceptions;
+
+namespace MovieAdvisor.BulkDataLoader.Core.Server.EntityParsers
 {
     using System;
     using System.Globalization;
-    using Exceptions;
+    using Interfaces;
     using MovieAdvisor.Core.DataAccess.Entities;
 
-    public class RatingRecordParser
+    public class RatingRecordParser : IEntityParser<RatingRecordData>
     {
         /// <exception cref="EntityParserException">Any inner exception is wrapped into <c>EntityParserException</c> instance before throwing.</exception>
         public RatingRecordData ParseFromString(string stringRepresentation)

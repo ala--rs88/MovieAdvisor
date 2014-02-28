@@ -4,12 +4,8 @@
 
     public interface IUnityRegistry
     {
-        /// <summary>
-        /// The apply to unity container.
-        /// </summary>
-        /// <param name="container">
-        /// The container.
-        /// </param>
+        UnityRegistryApplicationOrderEnum ApplicationOrder { get; }
+
         void ApplyToUnityContainer(IUnityContainer container);
     }
 }

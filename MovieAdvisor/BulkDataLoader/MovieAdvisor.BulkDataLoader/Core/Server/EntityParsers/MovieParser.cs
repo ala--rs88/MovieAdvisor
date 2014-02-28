@@ -4,10 +4,11 @@
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
-    using Exceptions;
+    using Entities.Exceptions;
+    using Interfaces;
     using MovieAdvisor.Core.DataAccess.Entities;
 
-    public class MovieParser
+    public class MovieParser : IEntityParser<MovieData>
     {
         private readonly Dictionary<string, MovieGenreFlagsEnumData> genresRepresentationMap = new Dictionary<string, MovieGenreFlagsEnumData>
         {
@@ -34,10 +35,9 @@
         /// <exception cref="EntityParserException">Any inner exception is wrapped into <c>EntityParserException</c> instance before throwing.</exception>
         public MovieData ParseFromString(string stringRepresentation)
         {
-            // todo: refactor
             try
             {
-                var values = stringRepresentation.Split(new[] {"::"}, StringSplitOptions.RemoveEmptyEntries);
+                var values = stringRepresentation.Split(new[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
                 var id = int.Parse(values[0]);
 
                 var openBraceIndex = values[1].LastIndexOf('(');

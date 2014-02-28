@@ -11,5 +11,14 @@
     <Setting Name="RatingsDataPath" Type="System.String" Scope="Application">
       <Value Profile="(Default)">..\..\..\..\..\RawDataSets\MovieLens\ml-1m\ml-1m\ratings.dat</Value>
     </Setting>
+    <Setting Name="AreMoviesLoaded" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AreUsersLoaded" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AreRatingRecordsLoaded" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -3,10 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Globalization;
-    using Exceptions;
+    using Entities.Exceptions;
+    using Interfaces;
     using MovieAdvisor.Core.DataAccess.Entities;
 
-    public class UserParser
+    public class UserParser : IEntityParser<UserData>
     {
         private readonly Dictionary<string, GenderEnumData> genderRepresentationMap = new Dictionary<string, GenderEnumData>
         {

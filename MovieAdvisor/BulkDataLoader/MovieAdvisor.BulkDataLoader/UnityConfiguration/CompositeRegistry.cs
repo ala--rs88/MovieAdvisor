@@ -1,0 +1,22 @@
+﻿namespace MovieAdvisor.BulkDataLoader.UnityConfiguration
+{
+    using System.Collections.Generic;
+    using AppSpecific;
+    using MovieAdvisor.Core.DataAccess.UnityConfiguration;
+    using Shared.Unity;
+
+    public class CompositeRegistry : AbstractCompositeUnityRegistry
+    {
+        protected override IEnumerable<IUnityRegistry> InnerRegistries
+        {
+            get
+            {
+                return new IUnityRegistry[]
+                {
+                    new DataAccessBaseUnityRegistry(),
+                    new LoaderBaseRegistry()
+                };
+            }
+        }
+    }
+}

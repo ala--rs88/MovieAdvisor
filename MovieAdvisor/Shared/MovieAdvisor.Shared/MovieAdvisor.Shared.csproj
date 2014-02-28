@@ -39,8 +39,10 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Unity\AbstractCompositeUnityRegistry.cs" />
     <Compile Include="Unity\IUnityRegistry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\UnityRegistryApplicationOrderEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

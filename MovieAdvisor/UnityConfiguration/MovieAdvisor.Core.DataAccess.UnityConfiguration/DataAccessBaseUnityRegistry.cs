@@ -6,6 +6,14 @@
 
     public class DataAccessBaseUnityRegistry : IUnityRegistry
     {
+        public UnityRegistryApplicationOrderEnum ApplicationOrder
+        {
+            get
+            {
+                return UnityRegistryApplicationOrderEnum.ShouldBeAppliedInFirstStage;
+            }
+        }
+
         public void ApplyToUnityContainer(IUnityContainer container)
         {
             container.RegisterType<IUserDataManager, UserDataManager>(new PerResolveLifetimeManager());
