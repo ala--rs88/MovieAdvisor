@@ -1,7 +1,6 @@
 ﻿namespace MovieAdvisor.BulkDataLoader
 {
     using Microsoft.Practices.Unity;
-    using Core.Entities;
     using Core.Server;
     using UnityConfiguration;
 

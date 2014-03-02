@@ -1,4 +1,4 @@
-﻿namespace MovieAdvisor.Core.DataAccess.UnityConfiguration
+﻿namespace MovieAdvisor.Core.DataAccess.Unity
 {
     using Microsoft.Practices.Unity;
     using Interfaces;

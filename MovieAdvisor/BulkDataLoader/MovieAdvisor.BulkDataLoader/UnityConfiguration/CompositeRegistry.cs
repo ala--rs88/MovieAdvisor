@@ -1,8 +1,8 @@
 ﻿namespace MovieAdvisor.BulkDataLoader.UnityConfiguration
 {
     using System.Collections.Generic;
+    using DataAccess.Unity;
     using AppSpecific;
-    using MovieAdvisor.Core.DataAccess.UnityConfiguration;
     using Shared.Unity;
 
     public class CompositeRegistry : AbstractCompositeUnityRegistry
