@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="36c9f161-7348-49e6-b988-be4a099dcf9b"
   name="MovieAdvisor.Architecture" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,6 +17,425 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="d6cdcb9f-38a9-405f-a077-e7ed37831f54"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6b669738-b08a-4f6d-93f6-1ab4735f2d74"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Sign Out"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="89e3dd60-a405-440b-bbd4-daa29cac61c8"
+              LastKnownName="Sign Out"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba1e811f-e9f8-4908-9a48-7f699ceda535"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0d3234b-a736-40c2-9445-06b6162d90dc"
+                  name="Sign Out"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c0b990d9-74ca-4e48-939f-c629d5403621"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Sign In"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c9bac432-5488-4f1c-8d4d-0544ccc64847"
+              LastKnownName="Sign In"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="73bf3a98-0f63-4e43-bcbb-5ef8c8102e94"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a26bbd9-3821-4e2c-8a24-76d59cf7bdbb"
+                  name="Sign In"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5154d05e-c6a2-41dc-9ff7-3f07e84d7b4b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Sign Up"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9933b805-99c1-412e-9b4b-3e9e7d11361f"
+              LastKnownName="Sign Up"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44092a1c-d8de-4292-91a6-230680e0838d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cecc8ea-44d0-4a6b-b724-3d56f95c5c0c"
+                  name="Sign Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7b043a20-4bf6-4962-9d19-dcb85cc8be8e"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Browse Movies"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a974d50f-2d73-4d66-a8d8-ac1dfb1b54b5"
+              LastKnownName="Browse All Movies"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="067dd091-28f4-4f1e-a7c9-7e660fdfcb7e"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3558db9a-420a-4e75-9926-7bd9d2fc5cee"
+                  name="Browse Movies"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fcf99b3c-9810-44f2-b025-28407a1f672b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Browse Recommendations"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="34a9e71e-c28f-4179-a298-a016f1c50865"
+              LastKnownName="Browse Recommended Movies"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b7269c4-8966-41e0-8b42-91014e242f0e"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5193bf24-1945-4bd8-a3e0-6aa7b71d48fa"
+                  name="Browse Recommendations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="64ac072f-ab0f-467f-b1fc-b6ce63af875f"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Rate Movie"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a3478436-c462-4f7c-9d00-411634bf0b52"
+              LastKnownName="Rate Movie"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5af9a1a5-9065-47f9-9a31-d1754f2e898d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3cdcd0b-2667-4659-839f-e68f6a132f13"
+                  name="Rate Movie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="47ac6dbb-7ad7-4c2a-bb7e-13a95c2ad405"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="28b647a3-58a8-4144-8184-cf482301f0aa"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Add New Movie"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="afd52136-b56c-466b-b8c7-64a38be7646a"
+              LastKnownName="Add New Movie"
+              LastKnownLocation="Package_2219.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15756f7c-6608-4474-9931-304c59603fad"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b68baaef-8f36-47e6-a8bc-13649fd9229d"
+                  name="Add New Movie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c85ad6c1-9ebc-4bef-9bfc-cc3f30f53d0e"
+        name="Developer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fd2dee16-db57-4383-82c7-3e66d4f58712"
+            isDerived="false"
+            sourceEndRoleName="Developer"
+            targetEndRoleName="ETL Data"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="038b6411-d2a6-435c-a9a0-734b74619019"
+              LastKnownName="ETL Data"
+              LastKnownLocation="Package1_2220.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e9d9736-3704-41b8-9d75-400fa3d98f26"
+                  name="Developer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8d30dba-50ce-42cd-a467-948fe56a4203"
+                  name="ETL Data"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="63f6608e-7507-45b7-ba9d-9426849c0d3c"
+            isDerived="false"
+            sourceEndRoleName="Developer"
+            targetEndRoleName="Compute Algorithm Metrics"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="758770a4-04f2-4e73-8e18-ea81d3113a8c"
+              LastKnownName="Compute Algorithm Metrics"
+              LastKnownLocation="Package_2220.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="051c909b-2ea1-4e2b-a216-a948d735c7e5"
+                  name="Developer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1190dea-d2b9-4cc6-8e8b-f6b1c275e3a6"
+                  name="Compute Algorithm Metrics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="68990b12-4913-4912-b123-772eb60de52f"
+        LastKnownName="Client UI"
+        LastKnownLocation="Package_2218.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="14b27530-d4c3-4306-897c-2cd89c7dd2b7"
+        LastKnownName="Admin UI"
+        LastKnownLocation="Package_2219.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a510b3ff-e119-4ebd-b8e0-07344fbe8e94"
+        LastKnownName="Qualifier"
+        LastKnownLocation="Package_2220.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6a7e20cc-0b0c-42e6-aaf1-69cf483a8291"
+        LastKnownName="BulkDataLoader"
+        LastKnownLocation="Package1_2220.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6dcdc4ed-21ba-4d84-8e83-10d0497cc12a"
+        LastKnownName="Core"
+        LastKnownLocation="Package_2221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="abdd06e2-59f8-43bf-9e00-1219bbe87a91"
+        LastKnownName="Data Storage"
+        LastKnownLocation="Package_2222.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"

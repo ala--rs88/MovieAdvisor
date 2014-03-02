@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cb952077-c5e5-4590-bd90-8b6bcbfe60d9" name="GeneralUseCases" linkedPackageId="cd51062c-33fc-4679-8c4f-8c8b5a931aa0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="f0a77193-c421-493c-bfc3-30026b17f1f8">
+      <profileInstance Id="4c967bb2-9ab5-491f-8ea5-009b131a9e3a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a9b4a454-fd56-4cb3-98a9-1304d13f7b0b">
+      <profileInstance Id="7fc79984-4452-4de1-aeea-317087486eed" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ff3d560b-532c-4f64-9d1f-c3ff1d44022d" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6cdcb9f-38a9-405f-a077-e7ed37831f54" />
+        <targetEnds>
+          <association Id="16e1e375-845e-472f-a8eb-4988b41d915a" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Sign Out" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8d1f928c-162a-4ffb-a5a8-af889684d123" LastKnownName="Sign Out" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02d15321-21d7-4962-87a7-8a9124f77b7c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba1e811f-e9f8-4908-9a48-7f699ceda535" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b6c4514-6894-4daf-a3d0-8bca6732a2fd" name="Sign Out" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0d3234b-a736-40c2-9445-06b6162d90dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b669738-b08a-4f6d-93f6-1ab4735f2d74" />
+          </association>
+          <association Id="82627c44-df55-41a7-b7aa-54c0fc690e81" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Sign In" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6f02023a-3900-4785-b66f-81545565721b" LastKnownName="Sign In" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b16ba50f-1d85-4588-8c8d-f2b273847c6d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73bf3a98-0f63-4e43-bcbb-5ef8c8102e94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afcf7d69-9f71-472a-8645-3b81df165d15" name="Sign In" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a26bbd9-3821-4e2c-8a24-76d59cf7bdbb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c0b990d9-74ca-4e48-939f-c629d5403621" />
+          </association>
+          <association Id="2f2c4c20-3594-4046-8508-eba683188e85" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Sign Up" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9aff651a-1b51-4ff9-8170-17cbc4d922f3" LastKnownName="Sign Up" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3efe917-923b-4869-b7b7-43c4226cc578" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44092a1c-d8de-4292-91a6-230680e0838d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca8707bd-1722-4a4c-b1b6-fb38fc226e41" name="Sign Up" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3cecc8ea-44d0-4a6b-b724-3d56f95c5c0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5154d05e-c6a2-41dc-9ff7-3f07e84d7b4b" />
+          </association>
+          <association Id="4131d95a-89ea-44c5-b6fd-9d2c022b50e4" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Browse Movies" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a3968567-c24c-494c-aa2e-dd826b9b0b4c" LastKnownName="Browse All Movies" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94b335a3-4b09-4262-aac5-5700dce1c989" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="067dd091-28f4-4f1e-a7c9-7e660fdfcb7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a87983b8-1876-4bd1-87fc-72fe74ac1f05" name="Browse Movies" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3558db9a-420a-4e75-9926-7bd9d2fc5cee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7b043a20-4bf6-4962-9d19-dcb85cc8be8e" />
+          </association>
+          <association Id="1839bfb1-a301-43e2-a023-d017fe63e7b1" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Browse Recommendations" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8e1bb11b-46c6-4c40-8381-2d616955333c" LastKnownName="Browse Recommended Movies" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ec13ed8-c5d3-497f-b8a3-4b6fdb515745" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b7269c4-8966-41e0-8b42-91014e242f0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b1d84f3b-c6e9-4c84-a1d1-2297fae81527" name="Browse Recommendations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5193bf24-1945-4bd8-a3e0-6aa7b71d48fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fcf99b3c-9810-44f2-b025-28407a1f672b" />
+          </association>
+          <association Id="71fe4243-8a0c-4c7c-90dd-6672dd658619" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Rate Movie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dc938c32-7588-4400-a2a5-3bad61041e60" LastKnownName="Rate Movie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b54c6e7-fb1c-4c84-be8e-fba81ca56dd4" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5af9a1a5-9065-47f9-9a31-d1754f2e898d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d35ceb8-cbda-4f70-913f-7f4e863bc8bf" name="Rate Movie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3cdcd0b-2667-4659-839f-e68f6a132f13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="64ac072f-ab0f-467f-b1fc-b6ce63af875f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a60de487-73b5-4d7c-a1ab-e202bf126371" name="Client UI (web/mobile)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="95458a10-ae3a-41a6-bfb5-f25195e27734" />
+        <suppliersInternal>
+          <dependency Id="b116e9fb-13a2-4899-9ed9-87406bfa16bf">
+            <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+            <elementDefinition Id="e382c5bd-b119-4c32-9020-4602ce3c6921" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="6f02023a-3900-4785-b66f-81545565721b" name="Sign In" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c9bac432-5488-4f1c-8d4d-0544ccc64847" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8d1f928c-162a-4ffb-a5a8-af889684d123" name="Sign Out" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89e3dd60-a405-440b-bbd4-daa29cac61c8" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9aff651a-1b51-4ff9-8170-17cbc4d922f3" name="Sign Up" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9933b805-99c1-412e-9b4b-3e9e7d11361f" />
+        <additions>
+          <include Id="de15e0ee-cf51-433a-b489-716975ebdd0b">
+            <useCaseMoniker Id="f96377d3-7e53-41df-9751-11d8002b4a80" LastKnownName="Supply Initial Ratings" />
+            <elementDefinition Id="271446dd-314d-4d42-b6f2-52fa6a93edaf" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8e1bb11b-46c6-4c40-8381-2d616955333c" name="Browse Recommended Movies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34a9e71e-c28f-4179-a298-a016f1c50865" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dc938c32-7588-4400-a2a5-3bad61041e60" name="Rate Movie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3478436-c462-4f7c-9d00-411634bf0b52" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a3968567-c24c-494c-aa2e-dd826b9b0b4c" name="Browse All Movies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a974d50f-2d73-4d66-a8d8-ac1dfb1b54b5" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f96377d3-7e53-41df-9751-11d8002b4a80" name="Supply Initial Ratings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4bce606-0bf9-4e31-bf76-a03935475b93" />
+        <subjects>
+          <subsystemMoniker Id="a60de487-73b5-4d7c-a1ab-e202bf126371" LastKnownName="Client UI (web/mobile)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9267df86-7578-4804-88bc-5b484facb131" name="Core" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b58c6c54-e30d-4cd6-bfe0-3f9a5c3849bf" name="Algorithm Qualifier Tool" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="259fd653-ce42-47ec-b155-c9f4cba3f5b9" />
+        <suppliersInternal>
+          <dependency Id="9eeeeab7-7b04-4bcf-91f0-8e5600f649e0">
+            <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+            <elementDefinition Id="c2e0a576-0a60-4354-aa81-ec9395e87a8f" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="793067f0-e875-498a-a583-ea135a11d214" name="BulkDataLoader Tool" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a604258f-1073-45ad-8d56-2426eb2da4b6" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="27606284-6786-42ce-a520-86036598a7a8" name="Admin UI (web)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72d31416-26f9-4257-b794-b7367f6a06f5" />
+        <suppliersInternal>
+          <dependency Id="4333b0e5-01de-4f00-9817-ce789ee6811f">
+            <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+            <elementDefinition Id="5e8b20f8-92ff-4636-9518-0346d6d5b62f" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="26fad2c1-0c0c-45eb-8421-03beddfb91a3" name="Add New Movie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afd52136-b56c-466b-b8c7-64a38be7646a" />
+        <subjects>
+          <subsystemMoniker Id="27606284-6786-42ce-a520-86036598a7a8" LastKnownName="Admin UI (web)" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="1aac4c95-42b3-46da-ac71-4f3b8ea380de" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47ac6dbb-7ad7-4c2a-bb7e-13a95c2ad405" />
+        <targetEnds>
+          <association Id="6845ec59-e0c2-4041-a145-0489d3d28d00" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Add New Movie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="26fad2c1-0c0c-45eb-8421-03beddfb91a3" LastKnownName="Add New Movie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74c56d41-15d7-4be9-97a2-abb5cc0c8277" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15756f7c-6608-4474-9931-304c59603fad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="515a1f67-7bb8-4994-86e9-96abb6bf30f1" name="Add New Movie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b68baaef-8f36-47e6-a8bc-13649fd9229d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="28b647a3-58a8-4144-8184-cf482301f0aa" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="78d4428c-9d0e-4819-9ec7-ac12218cff6a" name="Developer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c85ad6c1-9ebc-4bef-9bfc-cc3f30f53d0e" />
+        <targetEnds>
+          <association Id="ae8e4b32-d86f-43d5-b81e-5491889212a6" isDerived="false" sourceEndRoleName="Developer" targetEndRoleName="ETL Data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="68f21ba4-8122-4137-a9da-c0800559c3dd" LastKnownName="ETL Data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc4c74ef-a57d-462b-a930-f33a6d9cb649" name="Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7e9d9736-3704-41b8-9d75-400fa3d98f26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="34ffbb31-62c0-442a-84ac-2243db4632d1" name="ETL Data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8d30dba-50ce-42cd-a467-948fe56a4203" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd2dee16-db57-4383-82c7-3e66d4f58712" />
+          </association>
+          <association Id="b09d9d24-2897-46b5-8853-b515463d5575" isDerived="false" sourceEndRoleName="Developer" targetEndRoleName="Compute Algorithm Metrics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f8a8fa61-6e1a-4318-8ea7-c23380a9486c" LastKnownName="Compute Algorithm Metrics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28f62406-dc50-4f67-90f7-38be2b92b51f" name="Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="051c909b-2ea1-4e2b-a216-a948d735c7e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="948bb5a8-7780-4fea-bf8b-0fce88e64627" name="Compute Algorithm Metrics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c1190dea-d2b9-4cc6-8e8b-f6b1c275e3a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="63f6608e-7507-45b7-ba9d-9426849c0d3c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="68f21ba4-8122-4137-a9da-c0800559c3dd" name="ETL Data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="038b6411-d2a6-435c-a9a0-734b74619019" />
+        <subjects>
+          <subsystemMoniker Id="793067f0-e875-498a-a583-ea135a11d214" LastKnownName="BulkDataLoader Tool" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f8a8fa61-6e1a-4318-8ea7-c23380a9486c" name="Compute Algorithm Metrics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="758770a4-04f2-4e73-8e18-ea81d3113a8c" />
+        <subjects>
+          <subsystemMoniker Id="b58c6c54-e30d-4cd6-bfe0-3f9a5c3849bf" LastKnownName="Algorithm Qualifier Tool" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ab406f96-b803-4f26-be4c-0c9b6659e749" name="Compute Recommendation For User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58fbf1c7-0145-4aa2-bedb-4241f22d480b" />
+        <subjects>
+          <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b71cae7e-7d4e-464a-ade8-9e9cd0f9b22c" name="Create Movie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dbebbb2d-0083-4f15-9d2e-71c608ce884b" />
+        <subjects>
+          <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7e2b0806-d040-477d-a01a-799c263908d9" name="Create User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ba71cb55-a28b-40e7-8498-06022fed2a1c" />
+        <subjects>
+          <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="08cfe5f9-0f91-4826-95b1-617f0392ee16" name="Create Rating Record" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f040dea-6ce3-416e-838d-41a2b5a01308" />
+        <subjects>
+          <subsystemMoniker Id="9267df86-7578-4804-88bc-5b484facb131" LastKnownName="Core" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cd51062c-33fc-4679-8c4f-8c8b5a931aa0" name="MovieAdvisor.Architecture">
+    <elementDefinition Id="36c9f161-7348-49e6-b988-be4a099dcf9b" />
+  </package>
+</useCaseModelRoot>

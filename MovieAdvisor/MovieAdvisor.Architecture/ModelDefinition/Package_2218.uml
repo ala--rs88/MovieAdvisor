@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="68990b12-4913-4912-b123-772eb60de52f"
+  name="Client UI" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+        name="Client UI (web/mobile)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e382c5bd-b119-4c32-9020-4602ce3c6921">
+            <subsystemMoniker
+              Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+              LastKnownName="Core"
+              LastKnownLocation="Package_2221.uml" />
+          </dependency>
+          <dependency
+            Id="ab1a4512-a0c8-44a1-9cfa-39bfbb0fc3a3">
+            <subsystemMoniker
+              Id="2e30c877-559a-4b43-ba81-425c89b2447c"
+              LastKnownName="Data Storage"
+              LastKnownLocation="Package_2222.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a974d50f-2d73-4d66-a8d8-ac1dfb1b54b5"
+        name="Browse All Movies"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="34a9e71e-c28f-4179-a298-a016f1c50865"
+        name="Browse Recommended Movies"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a3478436-c462-4f7c-9d00-411634bf0b52"
+        name="Rate Movie"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c9bac432-5488-4f1c-8d4d-0544ccc64847"
+        name="Sign In"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="89e3dd60-a405-440b-bbd4-daa29cac61c8"
+        name="Sign Out"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9933b805-99c1-412e-9b4b-3e9e7d11361f"
+        name="Sign Up"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="271446dd-314d-4d42-b6f2-52fa6a93edaf">
+            <useCaseMoniker
+              Id="f4bce606-0bf9-4e31-bf76-a03935475b93"
+              LastKnownName="Supply Initial Ratings"
+              LastKnownLocation="Package_2218.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f4bce606-0bf9-4e31-bf76-a03935475b93"
+        name="Supply Initial Ratings"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95458a10-ae3a-41a6-bfb5-f25195e27734"
+            LastKnownName="Client UI (web/mobile)"
+            LastKnownLocation="Package_2218.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

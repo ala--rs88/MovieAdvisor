@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="a510b3ff-e119-4ebd-b8e0-07344fbe8e94"
+  name="Qualifier" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="758770a4-04f2-4e73-8e18-ea81d3113a8c"
+        name="Compute Algorithm Metrics"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="259fd653-ce42-47ec-b155-c9f4cba3f5b9"
+            LastKnownName="Algorithm Qualifier Tool"
+            LastKnownLocation="Package_2220.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="259fd653-ce42-47ec-b155-c9f4cba3f5b9"
+        name="Algorithm Qualifier Tool"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c2e0a576-0a60-4354-aa81-ec9395e87a8f">
+            <subsystemMoniker
+              Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+              LastKnownName="Core"
+              LastKnownLocation="Package_2221.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

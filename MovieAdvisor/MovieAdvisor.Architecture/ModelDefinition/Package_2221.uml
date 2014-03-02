@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="6dcdc4ed-21ba-4d84-8e83-10d0497cc12a"
+  name="Core" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+        name="Core"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="eba62840-a201-4298-bf37-7660b3ddaab1">
+            <subsystemMoniker
+              Id="2e30c877-559a-4b43-ba81-425c89b2447c"
+              LastKnownName="Data Storage"
+              LastKnownLocation="Package_2222.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dbebbb2d-0083-4f15-9d2e-71c608ce884b"
+        name="Create Movie"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+            LastKnownName="Core"
+            LastKnownLocation="Package_2221.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba71cb55-a28b-40e7-8498-06022fed2a1c"
+        name="Create User"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+            LastKnownName="Core"
+            LastKnownLocation="Package_2221.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="58fbf1c7-0145-4aa2-bedb-4241f22d480b"
+        name="Compute Recommendation For User"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+            LastKnownName="Core"
+            LastKnownLocation="Package_2221.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f040dea-6ce3-416e-838d-41a2b5a01308"
+        name="Create Rating Record"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="798d6bc9-aa7f-44e9-bae1-964bd765a7fa"
+            LastKnownName="Core"
+            LastKnownLocation="Package_2221.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

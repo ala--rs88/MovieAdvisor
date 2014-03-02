@@ -22,21 +22,32 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="DomainEntities.classdiagram">
+    <Content Include="ModelDefinition\Package1_2220.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="DomainEntities.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>DomainEntities.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram">
+    <Content Include="ModelDefinition\Package_2218.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+    <Content Include="ModelDefinition\Package_2219.uml">
       <SubType>Content</SubType>
-      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_2220.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2221.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2222.uml">
+      <SubType>Content</SubType>
     </Content>
     <Folder Include="ModelDefinition\" />
+    <Content Include="UseCases_v1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCases_v1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCases_v1.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\MovieAdvisor.Architecture.uml">
       <SubType>Content</SubType>
     </Content>
