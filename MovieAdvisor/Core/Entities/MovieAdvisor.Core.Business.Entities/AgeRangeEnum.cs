@@ -12,7 +12,6 @@
         /// </summary>
         Under18 = 1,
 
-
         /// <summary>
         /// Age from 18 up to 24.
         /// </summary>
