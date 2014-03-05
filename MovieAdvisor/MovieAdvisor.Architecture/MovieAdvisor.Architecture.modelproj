@@ -52,4 +52,17 @@
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers_v1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers_v1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers_v1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers_v1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers_v1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
 </Project>

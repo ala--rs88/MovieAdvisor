@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0199d909-d81a-4271-aca7-2e975fb4c1ad" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="21c83226-5ca4-4e44-8042-d5168154d790" name="Client Mobile UI (iOS)">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6d14b154-bcbe-4406-8bb7-2f81e6b679fd" direction="Forward">
+          <layerMoniker Id="e58f0afd-7b9c-4b16-8cce-9b442392ec2e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="9a842913-ae99-450c-80ea-511586f604bf" name="Graph DB (Neo4j)" />
+    <layer Id="194d8b43-86d2-4d27-9e64-c22c773d189b" name="Other DB (SQL Server/MongoDB/... -- ?)" />
+    <layer Id="bfc1cdf9-2a7e-4c3a-b31a-9874de9bc258" name="Algorithm Qualifier Tool&#xD;&#xA;&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="91f2df65-be24-4a55-a866-4f81fdbf3e04" direction="Forward">
+          <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="c1ed06d6-0b98-4cbd-93a1-ba1b7bdc3c84" direction="Forward">
+          <layerMoniker Id="9a842913-ae99-450c-80ea-511586f604bf" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="f1693112-0326-4b14-84ef-367ef69a96d2" name="BulkDataLoader Tool&#xD;&#xA;&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="45f60673-65d9-470d-8996-c09cccac51fb" direction="Forward">
+          <layerMoniker Id="9a842913-ae99-450c-80ea-511586f604bf" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="d491cbed-2c80-4188-a8bb-4c781657e609" name="Shared">
+      <childLayers>
+        <layer Id="8a4c1fdd-def7-4025-8f2c-be7d4ea81a13" name="Common">
+          <childLayers>
+            <layer Id="e2de557c-7558-4d60-8bbe-3256df31f6e0" name="Logging&#xD;&#xA;" />
+            <layer Id="5368db28-0c8c-4c42-bedc-75ecabe70d43" name="AOP Aspects&#xD;&#xA;" />
+            <layer Id="838ade78-e0f9-48f5-81cc-5bd3d8f1f226" name="IoC&#xD;&#xA;" />
+            <layer Id="d4b9715a-f9d7-4b1c-b322-24384fd509c8" name="Caching" />
+          </childLayers>
+        </layer>
+        <layer Id="575a60ca-445b-4b43-b265-7d650c97274d" name="Entities Mappings&#xD;&#xA;" />
+        <layer Id="30f50c88-96c5-4daa-b3cf-823e78537685" name="IoC Configurations" />
+      </childLayers>
+    </layer>
+    <layer Id="ad9b8196-2497-43aa-9c22-18134d5101b0" name="Key-Value DB" />
+    <layer Id="02b2a366-9b5e-4a6b-9dd9-9b45f749bcaf" name="Caching&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="46f2488b-cfb5-4f6a-9eba-d36b66c2d47a" direction="Forward">
+          <layerMoniker Id="ad9b8196-2497-43aa-9c22-18134d5101b0" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="a08733e9-8520-46d0-8263-d4259e65edb0" direction="Forward">
+          <layerMoniker Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="4d1beb6d-f602-4ecb-9823-b9b2d7ba9a8a" name="Workflow&#xD;&#xA;">
+      <childLayers>
+        <layer Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" name="DataAccess&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="72c6a459-31c6-4caf-b20c-76c15e24ff83" direction="Forward">
+              <layerMoniker Id="194d8b43-86d2-4d27-9e64-c22c773d189b" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="3fbef71e-8f8a-4b5b-a64c-0acb31260346" name="Core&#xD;&#xA;">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="878088ce-6991-4749-abd5-60fc443c7446" direction="Forward">
+                  <layerMoniker Id="9a842913-ae99-450c-80ea-511586f604bf" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+          </childLayers>
+        </layer>
+        <layer Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" name="Business&#xD;&#xA;&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="88d708ad-1aae-4f9b-b898-4719100394c3" direction="Forward">
+              <layerMoniker Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" name="Core Workflow&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="90e16b94-776f-4898-9201-671dc6eec804" direction="Forward">
+                  <layerMoniker Id="3fbef71e-8f8a-4b5b-a64c-0acb31260346" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="cb7eb7ec-26d4-43f1-9782-3c35d3a7a39f" name="Workflow Facade">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="87542ae5-79a9-47b8-a34e-4f7affb42afb" direction="Forward">
+                  <layerMoniker Id="1d6267f3-c771-4486-bf66-da73755c44ef" />
+                </dependencyFromLayerToLayer>
+                <dependencyFromLayerToLayer Id="af31378d-7027-4e62-a793-2e089101177e" direction="Forward">
+                  <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="1d6267f3-c771-4486-bf66-da73755c44ef" name="Workflow&#xD;&#xA;">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="4df4ddc7-564b-4d2e-8e70-c0fca29807cc" direction="Forward">
+                  <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="a93008bf-1efb-48d9-a549-8077fd6fabdc" name="WebUI&#xD;&#xA;">
+      <childLayers>
+        <layer Id="3362ba70-1253-4dcf-8319-29a1ef9ce298" name="Client Web UI (ASP.NET MVC)">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="cfedd62c-8f92-4045-988e-3474679ac8d5" direction="Forward">
+              <layerMoniker Id="02b2a366-9b5e-4a6b-9dd9-9b45f749bcaf" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="e58f0afd-7b9c-4b16-8cce-9b442392ec2e" name="ASP.NET WebAPI&#xD;&#xA;" />
+          </childLayers>
+        </layer>
+        <layer Id="7c4a4798-a6ac-4b3d-8e22-c98858ee133f" name="Admin Web UI (ASP.NET MVC)&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="fd572e9d-662d-43e1-b2b2-1c8c315a9017" direction="Forward">
+              <layerMoniker Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
