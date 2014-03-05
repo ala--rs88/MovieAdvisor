@@ -18,6 +18,9 @@
         <dependencyFromLayerToLayer Id="c1ed06d6-0b98-4cbd-93a1-ba1b7bdc3c84" direction="Forward">
           <layerMoniker Id="9a842913-ae99-450c-80ea-511586f604bf" />
         </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ffa7889f-fc8f-4632-abe6-3334706f3481" direction="Forward">
+          <layerMoniker Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" />
+        </dependencyFromLayerToLayer>
       </dependencyToLayers>
     </layer>
     <layer Id="f1693112-0326-4b14-84ef-367ef69a96d2" name="BulkDataLoader Tool&#xD;&#xA;&#xD;&#xA;">
