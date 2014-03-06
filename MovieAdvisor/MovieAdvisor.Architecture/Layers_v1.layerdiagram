@@ -55,7 +55,7 @@
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
     </layer>
-    <layer Id="4d1beb6d-f602-4ecb-9823-b9b2d7ba9a8a" name="Workflow&#xD;&#xA;">
+    <layer Id="4d1beb6d-f602-4ecb-9823-b9b2d7ba9a8a" name="Server&#xD;&#xA;">
       <childLayers>
         <layer Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" name="DataAccess&#xD;&#xA;">
           <dependencyToLayers>
@@ -68,39 +68,6 @@
               <dependencyToLayers>
                 <dependencyFromLayerToLayer Id="878088ce-6991-4749-abd5-60fc443c7446" direction="Forward">
                   <layerMoniker Id="9a842913-ae99-450c-80ea-511586f604bf" />
-                </dependencyFromLayerToLayer>
-              </dependencyToLayers>
-            </layer>
-          </childLayers>
-        </layer>
-        <layer Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" name="Business&#xD;&#xA;&#xD;&#xA;">
-          <dependencyToLayers>
-            <dependencyFromLayerToLayer Id="88d708ad-1aae-4f9b-b898-4719100394c3" direction="Forward">
-              <layerMoniker Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" />
-            </dependencyFromLayerToLayer>
-          </dependencyToLayers>
-          <childLayers>
-            <layer Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" name="Core Workflow&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
-              <dependencyToLayers>
-                <dependencyFromLayerToLayer Id="90e16b94-776f-4898-9201-671dc6eec804" direction="Forward">
-                  <layerMoniker Id="3fbef71e-8f8a-4b5b-a64c-0acb31260346" />
-                </dependencyFromLayerToLayer>
-              </dependencyToLayers>
-            </layer>
-            <layer Id="cb7eb7ec-26d4-43f1-9782-3c35d3a7a39f" name="Workflow Facade">
-              <dependencyToLayers>
-                <dependencyFromLayerToLayer Id="87542ae5-79a9-47b8-a34e-4f7affb42afb" direction="Forward">
-                  <layerMoniker Id="1d6267f3-c771-4486-bf66-da73755c44ef" />
-                </dependencyFromLayerToLayer>
-                <dependencyFromLayerToLayer Id="af31378d-7027-4e62-a793-2e089101177e" direction="Forward">
-                  <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
-                </dependencyFromLayerToLayer>
-              </dependencyToLayers>
-            </layer>
-            <layer Id="1d6267f3-c771-4486-bf66-da73755c44ef" name="Workflow&#xD;&#xA;">
-              <dependencyToLayers>
-                <dependencyFromLayerToLayer Id="4df4ddc7-564b-4d2e-8e70-c0fca29807cc" direction="Forward">
-                  <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
                 </dependencyFromLayerToLayer>
               </dependencyToLayers>
             </layer>
@@ -124,6 +91,39 @@
           <dependencyToLayers>
             <dependencyFromLayerToLayer Id="fd572e9d-662d-43e1-b2b2-1c8c315a9017" direction="Forward">
               <layerMoniker Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="8647cad5-b643-486e-86fe-fe3ad8c49bc5" name="Business&#xD;&#xA;&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="88d708ad-1aae-4f9b-b898-4719100394c3" direction="Forward">
+          <layerMoniker Id="d60e2811-f7bf-4f04-bc84-d62c140bc499" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" name="Core Workflow&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="90e16b94-776f-4898-9201-671dc6eec804" direction="Forward">
+              <layerMoniker Id="3fbef71e-8f8a-4b5b-a64c-0acb31260346" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="cb7eb7ec-26d4-43f1-9782-3c35d3a7a39f" name="Workflow Facade">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f36a83a0-e217-4dfa-a90e-a3b08e855949" direction="Forward">
+              <layerMoniker Id="1d6267f3-c771-4486-bf66-da73755c44ef" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="9e7980d8-d2a7-45e5-8bbb-38219a0a61f7" direction="Forward">
+              <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="1d6267f3-c771-4486-bf66-da73755c44ef" name="Workflow&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f596d3be-b76a-4afb-8283-63daaee90358" direction="Forward">
+              <layerMoniker Id="3d1b2e19-035f-4f34-9395-a566af22fa6d" />
             </dependencyFromLayerToLayer>
           </dependencyToLayers>
         </layer>
