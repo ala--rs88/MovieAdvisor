@@ -7,7 +7,7 @@
     {
         void CreateUsersByBatch(IEnumerable<UserData> usersBatch);
 
-        void CreateMoviesByBatch(IEnumerable<MovieData> moivesBatch);
+        void CreateMoviesByBatch(IEnumerable<MovieData> moviesBatch);
 
         void CreateRatingRecordsByBatch(IEnumerable<RatingRecordData> ratingRecordsBatch);
     }

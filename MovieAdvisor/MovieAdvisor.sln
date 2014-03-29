@@ -11,7 +11,7 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MovieAdvisor.Architecture",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BA5B9BEC-2AD4-4545-B75F-9949F781666A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{08B792FC-EFC2-45EC-993D-6445CE5552AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{08B792FC-EFC2-45EC-993D-6445CE5552AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BulkDataLoader", "BulkDataLoader", "{9894154E-D942-4015-89E3-B80D6E835C8F}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.BulkDataLoader.DataAccess.Unity", "UnityConfiguration\MovieAdvisor.BulkDataLoader.DataAccess.Unity\MovieAdvisor.BulkDataLoader.DataAccess.Unity.csproj", "{3D4A84E8-7841-481C-BF74-42228585E133}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Core.DataAccess.Unity", "UnityConfiguration\MovieAdvisor.Core.DataAccess.Unity\MovieAdvisor.Core.DataAccess.Unity.csproj", "{F643E36A-0E66-454D-B49C-078C0D5C9B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflow", "Workflow", "{E7FA7EA9-E490-4AEF-B72F-126B91CD5B42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

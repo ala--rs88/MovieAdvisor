@@ -35,16 +35,16 @@
                 .ExecuteWithoutResults();
         }
 
-        public void CreateMoviesByBatch(IEnumerable<MovieData> moivesBatch)
+        public void CreateMoviesByBatch(IEnumerable<MovieData> moviesBatch)
         {
-            if (moivesBatch == null)
+            if (moviesBatch == null)
             {
-                throw new ArgumentOutOfRangeException("moivesBatch");
+                throw new ArgumentOutOfRangeException("moviesBatch");
             }
 
             neo4jClient.Cypher
                 .Create("(:Movie {movies})")
-                .WithParam("movies", moivesBatch.ToArray())
+                .WithParam("movies", moviesBatch.ToArray())
                 .ExecuteWithoutResults();
         }
 
@@ -69,7 +69,7 @@
 
             ratingRecordsBatch.SelectMany((r, i) => new[]
                 {
-                    new Tuple<string, object>(string.Format(CultureInfo.InvariantCulture, "ratingProperties{0}", i), new { RatingValue = r.Value, r.Timestamp }), 
+                    new Tuple<string, object>(string.Format(CultureInfo.InvariantCulture, "ratingProperties{0}", i), new { Value = (int)r.Value, r.Timestamp }), 
                     new Tuple<string, object>(string.Format(CultureInfo.InvariantCulture, "u{0}Id", i), r.UserId),
                     new Tuple<string, object>(string.Format(CultureInfo.InvariantCulture, "m{0}Id", i), r.MovieId)
                 }).ToList().ForEach(tuple => parameters.Add(tuple.Item1, tuple.Item2));
@@ -92,7 +92,6 @@
             }
 
             var whereQuery = initialQuery.Where("u0.UserId = {u0Id}").AndWhere("m0.MovieId = {m0Id}");
-
 
             for (int i = 1; i < numberOfTimes; i++)
             {
