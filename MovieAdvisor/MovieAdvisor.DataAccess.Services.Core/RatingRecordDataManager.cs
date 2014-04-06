@@ -58,8 +58,8 @@
 
             var ratingValue = Neo4j.Cypher
                 .Match("(u:User)-[r:Rated]->(m:Movie)")
-                .Where((UserData u) => u.UserId == 3)
-                .AndWhere((MovieData m) => m.MovieId == 4)
+                .Where((UserData u) => u.UserId == userId)
+                .AndWhere((MovieData m) => m.MovieId == movieId)
                 .Return(r => r.As<RatingRecordData>().Value)
                 .Results
                 .SingleOrDefault();

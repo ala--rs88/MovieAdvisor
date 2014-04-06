@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{967E4978-1BF2-484A-B7BF-E1349DE67776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MovieAdvisor.Business.Unity.Core</RootNamespace>
+    <AssemblyName>MovieAdvisor.Business.Unity.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessBaseUnityRegistry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieAdvisor.Business.Interfaces.Core\MovieAdvisor.Business.Interfaces.Core.csproj">
+      <Project>{15A796C8-C6B5-421A-A0AF-FC2CD94E3B13}</Project>
+      <Name>MovieAdvisor.Business.Interfaces.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieAdvisor.Business.Interfaces\MovieAdvisor.Business.Interfaces.csproj">
+      <Project>{886FCF4D-5134-4A6C-A91C-DF4180BBDBE7}</Project>
+      <Name>MovieAdvisor.Business.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieAdvisor.Business.Services.Core\MovieAdvisor.Business.Services.Core.csproj">
+      <Project>{8AB32351-B5F1-4D5B-B231-EADE1D2F1936}</Project>
+      <Name>MovieAdvisor.Business.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieAdvisor.Business.Services\MovieAdvisor.Business.Services.csproj">
+      <Project>{EF043377-B154-4D33-A600-59891AF909AD}</Project>
+      <Name>MovieAdvisor.Business.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieAdvisor.Common\MovieAdvisor.Common.csproj">
+      <Project>{3F9E1675-AB70-4306-BDC8-16CC52668631}</Project>
+      <Name>MovieAdvisor.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

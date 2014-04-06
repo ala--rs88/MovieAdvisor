@@ -28,8 +28,8 @@
 
             return Neo4j.Cypher
                 .Match("(m1:Movie)<-[r1:Rated]-(:User)-[r2:Rated]->(m2:Movie)")
-                .Where((MovieData m1) => m1.MovieId == 1)
-                .AndWhere((MovieData m2) => m2.MovieId == 4)
+                .Where((MovieData m1) => m1.MovieId == sourceMovieId)
+                .AndWhere((MovieData m2) => m2.MovieId == targetMovieId)
                 .Return((r1, r2) => Return.As<int>("sum(r1.Value * r2.Value)"))
                 .Results.Single();
         }
@@ -43,7 +43,7 @@
 
             return Neo4j.Cypher
                 .Match("(m:Movie)<-[r:Rated]-(:User)")
-                .Where((MovieData m) => m.MovieId == 4)
+                .Where((MovieData m) => m.MovieId == movieId)
                 .Return(r => Return.As<double>("sqrt(sum(r.Value * r.Value))"))
                 .Results.Single();
         }

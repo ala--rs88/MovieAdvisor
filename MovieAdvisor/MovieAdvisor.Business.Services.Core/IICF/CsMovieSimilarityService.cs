@@ -43,9 +43,9 @@
                 throw new ArgumentOutOfRangeException("userId");
             }
 
-            var similarityTargetsCandidates = ratingRecordDataManager.GetMoviesIdsRatedByUser(userId).Where(i => i != sourceMovieId);
+            var similarityTargetsCandidates = ratingRecordDataManager.GetMoviesIdsRatedByUser(userId).Where(i => i != sourceMovieId).ToList();
 
-            var moviesSimilarities = similarityTargetsCandidates.Select(targetMovieId => GetMoviesSimilarity(sourceMovieId, targetMovieId));
+            var moviesSimilarities = similarityTargetsCandidates.Select(targetMovieId => GetMoviesSimilarity(sourceMovieId, targetMovieId)).ToList();
 
             return moviesSimilarities;
         }

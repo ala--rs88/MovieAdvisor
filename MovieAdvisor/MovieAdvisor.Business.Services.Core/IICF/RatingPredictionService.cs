@@ -9,7 +9,7 @@
 
     public class RatingPredictionService : IRatingPredictionService
     {
-        //// todo: IK move to settings
+        //// todo: IK move to settings or some code-config
         private const int CountOfSimilarMoviesToUseForPrediction = 30;
 
         private readonly IMovieSimilarityService movieSimilarityService;
@@ -36,6 +36,16 @@
         
         public double GetPrediction(int userId, int movieId)
         {
+            if (userId < 1)
+            {
+                throw new ArgumentOutOfRangeException("userId");
+            }
+
+            if (movieId < 1)
+            {
+                throw new ArgumentOutOfRangeException("movieId");
+            }
+
             var movieSimilarities = movieSimilarityService.GetMoviesSimilaritiesForUser(movieId, userId);
 
             var weightedRatingsPairs = new List<Tuple<double, RatingValueEnum>>();
