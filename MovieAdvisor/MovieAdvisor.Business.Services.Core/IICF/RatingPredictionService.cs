@@ -82,6 +82,11 @@
 
             var totalWeight = weightedRatingsPairs.Sum(p => Math.Abs(p.Item1));
 
+            if (totalWeight.Equals(0))
+            {
+                return GetBaselinePrediction();
+            }
+
             var weightedRatingsSum = weightedRatingsPairs.Sum(p => p.Item1 * (int)p.Item2);
 
             var predictionValue = weightedRatingsSum / totalWeight;

@@ -67,6 +67,16 @@
             var sourceMovieRatingsNorm = movieSimilarityDataService.GetMovieRatingsNorm(sourceMovieId);
             var targetMovieRatingsNorm = movieSimilarityDataService.GetMovieRatingsNorm(targetMovieId);
 
+            if (sourceMovieRatingsNorm.Equals(0) || targetMovieRatingsNorm.Equals(0))
+            {
+                return new MoviesSimilarity
+                {
+                    SourceMovieId = sourceMovieId,
+                    TargetMovieId = targetMovieId,
+                    SimilarityValue = 0
+                };
+            }
+
             var similarityIndex = moviesRatingsVectorProduct / (sourceMovieRatingsNorm * targetMovieRatingsNorm);
 
             return new MoviesSimilarity
