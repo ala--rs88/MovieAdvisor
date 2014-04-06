@@ -35,10 +35,16 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facades\IMovieAdvisorFacade.cs" />
+    <Compile Include="IMovieSimilarityService.cs" />
+    <Compile Include="IRatingPredictionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MovieAdvisor.Business.Entities.Core\MovieAdvisor.Business.Entities.Core.csproj">
+      <Project>{d620a0df-a793-4f04-a2f5-5946ad19a808}</Project>
+      <Name>MovieAdvisor.Business.Entities.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

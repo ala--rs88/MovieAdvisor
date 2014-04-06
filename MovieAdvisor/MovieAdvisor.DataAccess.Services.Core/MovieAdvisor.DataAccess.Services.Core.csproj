@@ -55,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDataManager.cs" />
+    <Compile Include="IICF\MovieSimilarityDataService.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="MovieDataManager.cs" />
     <Compile Include="Neo4jFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
