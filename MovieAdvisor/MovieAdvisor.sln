@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Business.Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.Business.Services", "MovieAdvisor.Business.Services\MovieAdvisor.Business.Services.csproj", "{EF043377-B154-4D33-A600-59891AF909AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAdvisor.WebUI", "MovieAdvisor.WebUI\MovieAdvisor.WebUI.csproj", "{B7E26773-2101-4302-ACA8-BB51D337B7FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,11 +125,16 @@ Global
 		{EF043377-B154-4D33-A600-59891AF909AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF043377-B154-4D33-A600-59891AF909AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF043377-B154-4D33-A600-59891AF909AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E26773-2101-4302-ACA8-BB51D337B7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E26773-2101-4302-ACA8-BB51D337B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E26773-2101-4302-ACA8-BB51D337B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E26773-2101-4302-ACA8-BB51D337B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{B7E26773-2101-4302-ACA8-BB51D337B7FA} = {08B792FC-EFC2-45EC-993D-6445CE5552AE}
 		{43E633F8-32CC-4194-B478-EF42366FB198} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 		{30B10326-0850-495E-B856-1449A2C413E1} = {9894154E-D942-4015-89E3-B80D6E835C8F}
 		{3D4A84E8-7841-481C-BF74-42228585E133} = {9894154E-D942-4015-89E3-B80D6E835C8F}

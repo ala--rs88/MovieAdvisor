@@ -14,7 +14,12 @@
 
             var movieAdvisor = unityContainer.Resolve<IMovieAdvisorFacade>();
 
-            var p = movieAdvisor.GetRatingPrediction(3, 3);
+            Console.WriteLine("[{0}] Prediction calculation started.", DateTime.Now);
+
+            var p = movieAdvisor.GetRatingPrediction(3, 4);
+            
+            Console.WriteLine("[{0}] Prediction calculation finished.", DateTime.Now);
+            Console.WriteLine();
 
             Console.WriteLine(p);
             Console.ReadLine();
