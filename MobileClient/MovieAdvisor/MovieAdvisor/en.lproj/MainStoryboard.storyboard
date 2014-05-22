@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User ID:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arA-kh-5hC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="pGN-qd-MIJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movie ID:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-Sc-187">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="asZ-HR-rX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-4F-DU8" userLabel="InputUserId">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="gid-sn-1zF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ewm-ee-EQ4" userLabel="InputMovieId">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OY-p0-pKi" userLabel="ButtonGetPrediction">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="AHL-Np-vQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Prediction!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.9523333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuV-TB-3HU" userLabel="LabelPredictedValue">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="KwO-yQ-dWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4OY-p0-pKi" firstAttribute="leading" secondItem="YAT-Sc-187" secondAttribute="leading" type="default" id="0ZX-Ae-gf8"/>
+                            <constraint firstItem="CAY-4F-DU8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="140" id="4a6-CI-ev2"/>
+                            <constraint firstItem="CAY-4F-DU8" firstAttribute="leading" secondItem="arA-kh-5hC" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="7gH-ue-ZX8"/>
+                            <constraint firstItem="4OY-p0-pKi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="254" id="A1e-wX-9MY"/>
+                            <constraint firstItem="AuV-TB-3HU" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Cvy-I9-Bm4"/>
+                            <constraint firstItem="YAT-Sc-187" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="64" id="Htn-ys-zzQ"/>
+                            <constraint firstItem="4OY-p0-pKi" firstAttribute="trailing" secondItem="Ewm-ee-EQ4" secondAttribute="trailing" type="default" id="K8U-SA-EGV"/>
+                            <constraint firstItem="Ewm-ee-EQ4" firstAttribute="top" secondItem="CAY-4F-DU8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Kmq-bq-TmT"/>
+                            <constraint firstItem="Ewm-ee-EQ4" firstAttribute="leading" secondItem="YAT-Sc-187" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Md0-dW-Lqd"/>
+                            <constraint firstItem="AuV-TB-3HU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="32" id="OKd-9r-33h"/>
+                            <constraint firstItem="Ewm-ee-EQ4" firstAttribute="leading" secondItem="CAY-4F-DU8" secondAttribute="leading" type="default" id="ZOz-EL-6cJ"/>
+                            <constraint firstItem="arA-kh-5hC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="144" id="b6B-sO-7dw"/>
+                            <constraint firstItem="Ewm-ee-EQ4" firstAttribute="trailing" secondItem="CAY-4F-DU8" secondAttribute="trailing" type="default" id="s9b-nI-zr1"/>
+                            <constraint firstItem="YAT-Sc-187" firstAttribute="top" secondItem="3" secondAttribute="top" constant="182" id="ubn-M9-Z9B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
